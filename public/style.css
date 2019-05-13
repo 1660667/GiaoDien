@@ -1,5 +1,5 @@
 h2{
-    color: red;
+    
     background-color: teal;
 }
 i{
@@ -15,5 +15,15 @@ i{
   div {
     background-color: darkgray;
   }
-  
-  
+P{
+    border-left: 6px solid red;
+  background-color: lightgrey;
+}
+th{
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightseagreen;
+}
