@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const db = require('./models/db');
-const User = require('./models/user');
+
 
 // Create app
 const app = express();
@@ -27,7 +27,6 @@ app.use(session({
 
 // Load routes
 app.use('/', require('./routes/home'));
-app.use('/user', require('./routes/user'));
 
 // Connect database
 db.sync().then(function() {
