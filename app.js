@@ -22,18 +22,23 @@ app.use(session({
   saveUninitialized: true,
 }));
 
-// Check login user
+//Đặt chỗ này
+app.use(express.static('public')); 
 
 
 // Load routes
 app.use('/', require('./routes/home'));
 
 // Connect database
+/*
 db.sync().then(function() {
   app.listen(port);
   console.log(`Server is listening on port ${port}`);
 }).catch(function(err) {
   console.log(err);
   process.exit(1);
-});
-app.use(express.static('public'));
+});*/
+
+app.listen(port,function(){
+  console.log('Mo port: '+port);
+})
