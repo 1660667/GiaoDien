@@ -16,7 +16,6 @@ i{
     background-color: darkgray;
   }
 P{
-    border-left: 6px solid red;
   background-color: lightgrey;
 }
 th{
@@ -27,5 +26,3 @@ th{
   margin-left: 80px;
   background-color: lightseagreen;
 }
-
-
