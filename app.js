@@ -28,6 +28,7 @@ app.use(express.static('public'));
 
 // Load routes
 app.use('/', require('./routes/home'));
+app.use('/', require('./routes/detail'));
 
 // Connect database
 /*
